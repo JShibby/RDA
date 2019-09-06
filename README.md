@@ -11,6 +11,9 @@ This project is an exercise in coding and data analysis; it does not represent n
 
 This repository contains all data and Python files needed for the project.  
 
+## Data Report
+This repository contains a data report, titled **"Is It Possible to Satisfy the RDA - Data Report.pdf."**  This report details the methodology and results of the project.
+
 ## The Code
 The code is spread across the following files, which may be treated as having a linear order, as later notebooks have some dependencies on earlier ones.
 1. **data.py** - Imports and processes the data.  Creates these objects:
@@ -26,7 +29,7 @@ The code is spread across the following files, which may be treated as having a 
 6. **RandomGut.py** - `RandomGut` is a subclass of `Gut` that chooses foods from food groups randomly, according to dietary plan.
 7. **sim RandomGut.py** - Tests the MyPlate dietary recommendations by simulating RandomGut multiple times and aggregating results.
 
-## Explore the Data
+## Online Interface 
 This repository *will contain* a Jupyter Notebook, which provides the user the opportunity to:
 * Explore the dataset. 
 * Explore the best sources of nutrients.
