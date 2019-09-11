@@ -106,7 +106,7 @@ class Gut(object):
         d2 = self.tracker[columns]
         d2 /= rda[columns]
         
-        plt.figure()
+#        plt.figure()
         ax = d2.plot.line()
         ax.axhline(y=1, color='tab:gray', linestyle='--')
         ax.set_title(title_word + ' (Relative to RDA)', fontsize = 16)
@@ -164,23 +164,25 @@ class Gut(object):
 
 
 #%%  Run
-recal_df(df, 50, 'Mass (g)')
-dfa = df.copy()
-
-calories = 2600
-choice_method = 'value'
-
-osf = 0.1
-g = Gut(calorie_limit = calories,  
-        oversatisfaction_factor = osf, 
-        df = dfa)
-
-tracker = g.get_tracker()
-tracker
-tracker.Food.value_counts()
-
-g.plot_nutrients()
-g.plot_satisfaction()
+# =============================================================================
+# recal_df(df, 50, 'Mass (g)')
+# dfa = df.copy()
+# 
+# calories = 2600
+# choice_method = 'value'
+# 
+# osf = 0.1
+# g = Gut(calorie_limit = calories,  
+#         oversatisfaction_factor = osf, 
+#         df = dfa)
+# 
+# tracker = g.get_tracker()
+# tracker
+# tracker.Food.value_counts()
+# 
+# g.plot_nutrients()
+# g.plot_satisfaction()
+# =============================================================================
    
 #%%  Export
 #tracker.Food.value_counts().to_csv('data/diet data.csv')

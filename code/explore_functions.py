@@ -46,30 +46,6 @@ def analyze_food(food, short_plot = True):
     plt.title(name)
     return s.sort_values(ascending = False).astype(float).round(2)
 
-#%%
-def analyze_food(food, short_plot = True):
-    '''
-    Plots the top nutrients for a food.
-    Returns the food's data series for further analysis.
-    '''
-    s = dv.loc[food]
-    s = nutrient_names.map(s)
-    s = s.sort_values()
-    
-    # Prepare set for plotting.
-    ss = s
-    if short_plot:
-        ss = s.tail()
-        
-    plt.figure()
-    ss.plot.barh()
-    plt.xlim((0,1.5))
-    plt.axvline(1, c = 'gray', ls = '--')
-    plt.xlabel('RDA Value Supplied')
-    plt.ylabel('')
-    name = df.Food[food]
-    plt.title(name)
-    return s.sort_values(ascending = False).astype(float).round(2)
 
 #%%  Analyze foods for Jupyter
 kn = ['Protein', 
