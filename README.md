@@ -12,7 +12,7 @@ This project is an exercise in coding and data analysis; it does not represent n
 This repository contains all data and Python files needed for the project.  
 
 ## Data Report
-This repository contains a data report, **[Is It Possible to Satisfy the RDA?](RDA/RDA_data_report.pdf)**  This report details the methodology and results of the project.
+This repository contains a data report, **[Is It Possible to Satisfy the RDA?](RDA_data_report.pdf)**  This report details the methodology and results of the project.
 
 ## Companion Jupyter Notebook 
 This repository contains a Jupyter Notebook, **[RDA_Jupyter](https://github.com/JShibby/RDA/blob/master/code/RDA_Jupyter.ipynb)**.  This  provides the user the opportunity to:
