@@ -13,13 +13,7 @@ from numpy import random as nr
 import warnings
 warnings.filterwarnings("ignore", category = FutureWarning)
 
-#%%  Presentation columns
-# Max number of nutrients to show per plot.
-key_nutrients = ['Protein (g)', 
-                 'Fiber (g)',
-                 'Vitamin A (IU)',
-                 'Thiamin (B1) (mg)',
-                 'Calcium (mg)']
+
 
 #%%  Gut - Knapsack object
 class Gut(object):
@@ -144,7 +138,7 @@ class Gut(object):
         Sets up an empty dataframe representing gut contents.
         index represents calories.
         '''
-        columns = ['ID#', 'Food'] + list(rda.index)
+        columns = ['ID#', 'Food', 'Food Group'] + list(rda.index)
         self.tracker = pd.DataFrame(columns = columns)
         self.tracker.loc[0] = 0
         self.tracker.loc[0, 'Food'] = '(Start)'

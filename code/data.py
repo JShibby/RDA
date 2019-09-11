@@ -18,6 +18,7 @@ include_exotic = False
 #%%  Packages
 import pandas as pd
 import string
+import numpy as np
 import matplotlib.pyplot as plt
 
 pd.set_option('mode.chained_assignment',None)
@@ -26,18 +27,17 @@ pd.set_option('mode.chained_assignment',None)
 #%%  Import Data
 df = pd.read_csv('data/data.csv', index_col = 'Database Number')
 df.index = df.index.astype(int)
-# dfo - the full dataset, reserved
-dfo = df
-len(df)
+dfo = df.copy()
 
 # Set up RDA
 rda = pd.read_csv('data/RDA.csv', index_col = "Nutrient (unit)", encoding = 'latin1')
+rda.Comment.fillna('-', inplace = True)
 rda = rda.RDA
 rda
 
 #%%  Subset
 # Curate data
-food_list = pd.read_csv('data/main_idx.csv', index_col = 'Database Number')
+food_list = pd.read_csv('data/food_subset.csv', index_col = 'Database Number')
 idx = food_list.index.dropna()
 food_list = food_list.loc[idx]
 food_list.index = food_list.index.astype(int)
@@ -98,7 +98,7 @@ def recal_df(df, serving_size = 50, serving_basis = 'Mass (g)'):
     try:
         df[numerics] = df[numerics].div(df[serving_basis], axis = 'index') * serving_size
     except:
-        raise ValueError('Invalid serving_basis.  Use "Mass (g)" or "Calories."')
+        raise ValueError('Invalid serving_basis.  Use "Mass (g)" or "Calories".')
     return None
 
 df['Protein (g)'].head()
@@ -151,6 +151,15 @@ def food_finder(food_name):
 
 #f = food_finder('aPPle')
 #df.loc[f, 'Food']     
+
+#%%  Presentation columns
+# Max number of nutrients to show per plot.
+key_nutrients = ['Protein (g)', 
+                 'Fiber (g)',
+                 'Vitamin A (IU)',
+                 'Thiamin (B1) (mg)',
+                 'Calcium (mg)']
+
 
 #%%  Serving size checker
 '''

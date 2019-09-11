@@ -85,4 +85,6 @@ dfa['Food Group'] = dfa['Food Group'].map(groups)
 r = RandomGut(df = dfa, food_group_calories = food_group_calories)
 tracker = r.get_tracker()
 tracker.Food
+r.get_results()
 
+tracker.Food.loc[tracker['Food Group'] == 'Fruits']
