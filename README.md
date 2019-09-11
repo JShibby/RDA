@@ -35,6 +35,6 @@ The code includes the following files, which may be treated as having a linear o
     * `analyze_food()` - Plots a foods top nutrients, and returns a sorted list of the nutrients it contains.
 5. **Gut.py** - Creates the `Gut` class.  Tests satisfiability and constructs an ideal diet.
 6. **RandomGut.py** - `RandomGut` is a subclass of `Gut` that chooses foods from food groups randomly, according to dietary plan.
-7. **sim RandomGut.py** - Tests the MyPlate dietary recommendations by simulating RandomGut multiple times and aggregating results.
+7. **sim RandomGut.py** - Tests the MyPlate dietary recommendations by simulating `RandomGut` multiple times and aggregating results.
 
 The code includes several data exploration scripts as well.
