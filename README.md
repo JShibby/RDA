@@ -15,14 +15,9 @@ This repository contains all data and Python files needed for the project.
 This repository contains a data report, **[Is It Possible to Satisfy the RDA?](RDA_data_report.pdf)**  This report details the methodology and results of the project.
 
 ## Companion Jupyter Notebook 
-This repository contains a **[Companion Jupyter Notebook](https://github.com/JShibby/RDA/blob/master/code/RDA_Jupyter.ipynb)**.  This  provides the user the opportunity to:
-* Explore the dataset.
-* Visualize the nutritional contents of foods.
-* Explore the best sources of nutrients.
-* Simulate a random diet based on MyPlate dietary recommendations, and review that diet in detail.
+This repository contains a **[Companion Jupyter Notebook](https://github.com/JShibby/RDA/blob/master/code/RDA_Jupyter.ipynb)**.  The notebook represents an abridged presentation of the project, and allows the user to review the information in more detail.  
 
-At the time of writing, GitHub fails to run the notebook.  If that is the case, the user can still review the notebook, albeit without the ability explore, here:
-* [RDA_Jupyter on NBViewer](https://nbviewer.jupyter.org/github/JShibby/RDA/blob/master/code/RDA_Jupyter.ipynb)
+Alternative link: [RDA_Jupyter on NBViewer](https://nbviewer.jupyter.org/github/JShibby/RDA/blob/master/code/RDA_Jupyter.ipynb)
 
 ## The Code
 The code includes the following files, which may be treated as having a linear order, as later notebooks have some dependencies on earlier ones.
