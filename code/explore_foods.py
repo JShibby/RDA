@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Use to find top value foods, show profiles, and more.
-
+  
 Created on Wed Jun 19 08:04:39 2019
 @author: Justin
 """
