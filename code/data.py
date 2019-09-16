@@ -161,11 +161,10 @@ key_nutrients = ['Protein (g)',
                  'Calcium (mg)']
 
 
-#%%  Serving size checker
+#%%  Serving size checker - visual check.
 '''
 Cheddar cheese
 100 g ~ 404 cal
  50 g ~ 202 cal
 '''
-
-df.Calories.loc[1009]
+# df.Calories.loc[1009]
